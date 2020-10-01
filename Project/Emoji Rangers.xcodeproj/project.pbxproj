@@ -53,6 +53,11 @@
 		DA55B60325260E88001B0229 /* SampleIntentConfiguration.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = DA55B5FF25260E85001B0229 /* SampleIntentConfiguration.intentdefinition */; };
 		DA55B60425260E88001B0229 /* SampleIntentConfiguration.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = DA55B5FF25260E85001B0229 /* SampleIntentConfiguration.intentdefinition */; };
 		DA55B60725260E88001B0229 /* SampleIntentConfigurationExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = DA55B5F925260E85001B0229 /* SampleIntentConfigurationExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		DA55B6352526183D001B0229 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5733B346248884DD0035C9B7 /* WidgetKit.framework */; platformFilter = ios; };
+		DA55B6362526183D001B0229 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5733B348248884DD0035C9B7 /* SwiftUI.framework */; };
+		DA55B6392526183D001B0229 /* SampleStaticConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA55B6382526183D001B0229 /* SampleStaticConfiguration.swift */; };
+		DA55B63B25261840001B0229 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA55B63A25261840001B0229 /* Assets.xcassets */; };
+		DA55B63F25261840001B0229 /* SampleStaticConfigurationExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = DA55B6342526183D001B0229 /* SampleStaticConfigurationExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +82,13 @@
 			remoteGlobalIDString = DA55B5F825260E85001B0229;
 			remoteInfo = SampleIntentConfigurationExtension;
 		};
+		DA55B63D25261840001B0229 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5733B3212488842D0035C9B7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DA55B6332526183D001B0229;
+			remoteInfo = SampleStaticConfigurationExtension;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -89,6 +101,7 @@
 				5733B369248884F70035C9B7 /* CharacterDetailExtension.appex in Embed App Extensions */,
 				DA55B60725260E88001B0229 /* SampleIntentConfigurationExtension.appex in Embed App Extensions */,
 				434AEDB7249168BC0047C5DD /* EmojiRangerIntentHandler.appex in Embed App Extensions */,
+				DA55B63F25261840001B0229 /* SampleStaticConfigurationExtension.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -135,6 +148,11 @@
 		DA55B60025260E88001B0229 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DA55B60225260E88001B0229 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DA55B60825260E88001B0229 /* SampleIntentConfigurationExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SampleIntentConfigurationExtension.entitlements; sourceTree = "<group>"; };
+		DA55B6342526183D001B0229 /* SampleStaticConfigurationExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SampleStaticConfigurationExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA55B6382526183D001B0229 /* SampleStaticConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleStaticConfiguration.swift; sourceTree = "<group>"; };
+		DA55B63A25261840001B0229 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DA55B63C25261840001B0229 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA55B64025261840001B0229 /* SampleStaticConfigurationExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SampleStaticConfigurationExtension.entitlements; sourceTree = "<group>"; };
 		E68FC7C59970E72A6D9463B8 /* SampleCode.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = SampleCode.xcconfig; path = ../Configuration/SampleCode.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -168,6 +186,15 @@
 			files = (
 				DA55B5FB25260E85001B0229 /* SwiftUI.framework in Frameworks */,
 				DA55B5FA25260E85001B0229 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA55B6312526183D001B0229 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA55B6362526183D001B0229 /* SwiftUI.framework in Frameworks */,
+				DA55B6352526183D001B0229 /* WidgetKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -224,6 +251,7 @@
 				5733B35E248884F60035C9B7 /* EmojiRangerWidget */,
 				434AEDB1249168BC0047C5DD /* EmojiRangerIntentHandler */,
 				DA55B5FC25260E85001B0229 /* SampleIntentConfiguration */,
+				DA55B6372526183D001B0229 /* SampleStaticConfiguration */,
 				5733B345248884DD0035C9B7 /* Frameworks */,
 				5733B32A2488842D0035C9B7 /* Products */,
 				891DBD66C8A7B1741AE11A74 /* Configuration */,
@@ -238,6 +266,7 @@
 				5733B35B248884F60035C9B7 /* CharacterDetailExtension.appex */,
 				434AEDB0249168BC0047C5DD /* EmojiRangerIntentHandler.appex */,
 				DA55B5F925260E85001B0229 /* SampleIntentConfigurationExtension.appex */,
+				DA55B6342526183D001B0229 /* SampleStaticConfigurationExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -329,6 +358,17 @@
 			path = SampleIntentConfiguration;
 			sourceTree = "<group>";
 		};
+		DA55B6372526183D001B0229 /* SampleStaticConfiguration */ = {
+			isa = PBXGroup;
+			children = (
+				DA55B6382526183D001B0229 /* SampleStaticConfiguration.swift */,
+				DA55B63A25261840001B0229 /* Assets.xcassets */,
+				DA55B63C25261840001B0229 /* Info.plist */,
+				DA55B64025261840001B0229 /* SampleStaticConfigurationExtension.entitlements */,
+			);
+			path = SampleStaticConfiguration;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -364,6 +404,7 @@
 				5733B368248884F70035C9B7 /* PBXTargetDependency */,
 				434AEDB6249168BC0047C5DD /* PBXTargetDependency */,
 				DA55B60625260E88001B0229 /* PBXTargetDependency */,
+				DA55B63E25261840001B0229 /* PBXTargetDependency */,
 			);
 			name = "Emoji Rangers";
 			productName = "Game Status";
@@ -404,6 +445,23 @@
 			productReference = DA55B5F925260E85001B0229 /* SampleIntentConfigurationExtension.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
+		DA55B6332526183D001B0229 /* SampleStaticConfigurationExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA55B64125261840001B0229 /* Build configuration list for PBXNativeTarget "SampleStaticConfigurationExtension" */;
+			buildPhases = (
+				DA55B6302526183D001B0229 /* Sources */,
+				DA55B6312526183D001B0229 /* Frameworks */,
+				DA55B6322526183D001B0229 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SampleStaticConfigurationExtension;
+			productName = SampleStaticConfigurationExtension;
+			productReference = DA55B6342526183D001B0229 /* SampleStaticConfigurationExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -427,6 +485,9 @@
 					DA55B5F825260E85001B0229 = {
 						CreatedOnToolsVersion = 12.0;
 					};
+					DA55B6332526183D001B0229 = {
+						CreatedOnToolsVersion = 12.0;
+					};
 				};
 			};
 			buildConfigurationList = 5733B3242488842D0035C9B7 /* Build configuration list for PBXProject "Emoji Rangers" */;
@@ -446,6 +507,7 @@
 				5733B35A248884F60035C9B7 /* CharacterDetailExtension */,
 				434AEDAF249168BC0047C5DD /* EmojiRangerIntentHandler */,
 				DA55B5F825260E85001B0229 /* SampleIntentConfigurationExtension */,
+				DA55B6332526183D001B0229 /* SampleStaticConfigurationExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -481,6 +543,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA55B60125260E88001B0229 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA55B6322526183D001B0229 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA55B63B25261840001B0229 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -549,6 +619,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DA55B6302526183D001B0229 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA55B6392526183D001B0229 /* SampleStaticConfiguration.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -566,6 +644,11 @@
 			isa = PBXTargetDependency;
 			target = DA55B5F825260E85001B0229 /* SampleIntentConfigurationExtension */;
 			targetProxy = DA55B60525260E88001B0229 /* PBXContainerItemProxy */;
+		};
+		DA55B63E25261840001B0229 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DA55B6332526183D001B0229 /* SampleStaticConfigurationExtension */;
+			targetProxy = DA55B63D25261840001B0229 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -931,6 +1014,60 @@
 			};
 			name = Release;
 		};
+		DA55B64225261840001B0229 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = SampleStaticConfiguration/SampleStaticConfigurationExtension.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 01;
+				DEVELOPMENT_TEAM = Y5G9RYLF8Y;
+				INFOPLIST_FILE = SampleStaticConfiguration/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "es.sdos.widgets.apple-samplecode.Emoji-Rangers.SampleStaticConfiguration";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DA55B64325261840001B0229 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = SampleStaticConfiguration/SampleStaticConfigurationExtension.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 01;
+				DEVELOPMENT_TEAM = Y5G9RYLF8Y;
+				INFOPLIST_FILE = SampleStaticConfiguration/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "es.sdos.widgets.apple-samplecode.Emoji-Rangers.SampleStaticConfiguration";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -975,6 +1112,15 @@
 			buildConfigurations = (
 				DA55B60A25260E88001B0229 /* Debug */,
 				DA55B60B25260E88001B0229 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DA55B64125261840001B0229 /* Build configuration list for PBXNativeTarget "SampleStaticConfigurationExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA55B64225261840001B0229 /* Debug */,
+				DA55B64325261840001B0229 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
