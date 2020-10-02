@@ -58,6 +58,7 @@
 		DA55B6392526183D001B0229 /* SampleStaticConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA55B6382526183D001B0229 /* SampleStaticConfiguration.swift */; };
 		DA55B63B25261840001B0229 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA55B63A25261840001B0229 /* Assets.xcassets */; };
 		DA55B63F25261840001B0229 /* SampleStaticConfigurationExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = DA55B6342526183D001B0229 /* SampleStaticConfigurationExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		DA9FEACD2526F5A9005DCEAA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA9FEACC2526F5A9005DCEAA /* InfoPlist.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -153,6 +154,7 @@
 		DA55B63A25261840001B0229 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DA55B63C25261840001B0229 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DA55B64025261840001B0229 /* SampleStaticConfigurationExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SampleStaticConfigurationExtension.entitlements; sourceTree = "<group>"; };
+		DA9FEACC2526F5A9005DCEAA /* InfoPlist.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = InfoPlist.strings; sourceTree = "<group>"; };
 		E68FC7C59970E72A6D9463B8 /* SampleCode.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = SampleCode.xcconfig; path = ../Configuration/SampleCode.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -281,6 +283,7 @@
 				5733B3322488842E0035C9B7 /* Assets.xcassets */,
 				5733B3372488842E0035C9B7 /* LaunchScreen.storyboard */,
 				5733B33A2488842E0035C9B7 /* Info.plist */,
+				DA9FEACC2526F5A9005DCEAA /* InfoPlist.strings */,
 				1F38D2652489DD8D00C02D73 /* Game Status.entitlements */,
 				5733B3342488842E0035C9B7 /* Preview Content */,
 			);
@@ -525,6 +528,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5733B3392488842E0035C9B7 /* LaunchScreen.storyboard in Resources */,
+				DA9FEACD2526F5A9005DCEAA /* InfoPlist.strings in Resources */,
 				5733B3362488842E0035C9B7 /* Preview Assets.xcassets in Resources */,
 				5733B3332488842E0035C9B7 /* Assets.xcassets in Resources */,
 			);
