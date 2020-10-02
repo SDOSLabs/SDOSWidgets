@@ -55,8 +55,8 @@ struct SampleStaticConfiguration: Widget {
         StaticConfiguration(kind: kind, provider: Provider()) { entry in
             SampleStaticConfigurationEntryView(entry: entry)
         }
-        .configurationDisplayName("My Widget")
-        .description("This is an example widget.")
+        .configurationDisplayName(NSLocalizedString("Static SDOSWidget", comment: ""))
+        .description(NSLocalizedString("This is an example SDOSWidget.", comment: ""))
     }
 }
 

@@ -59,6 +59,8 @@
 		DA55B63B25261840001B0229 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA55B63A25261840001B0229 /* Assets.xcassets */; };
 		DA55B63F25261840001B0229 /* SampleStaticConfigurationExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = DA55B6342526183D001B0229 /* SampleStaticConfigurationExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		DAC586CE2526F9EE003599DB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DAC586D02526F9EE003599DB /* InfoPlist.strings */; };
+		DAC586DE252713AC003599DB /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DAC586E0252713AC003599DB /* Localizable.strings */; };
+		DAC586FE2527166C003599DB /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DAC587002527166C003599DB /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -157,6 +159,10 @@
 		DAC586CD2526F9D5003599DB /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		DAC586CF2526F9EE003599DB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		DAC586D12526F9F2003599DB /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DAC586DF252713AC003599DB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		DAC586E6252713B0003599DB /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
+		DAC586FF2527166C003599DB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		DAC5870625271671003599DB /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
 		E68FC7C59970E72A6D9463B8 /* SampleCode.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = SampleCode.xcconfig; path = ../Configuration/SampleCode.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -359,6 +365,7 @@
 				DA55B60025260E88001B0229 /* Assets.xcassets */,
 				DA55B60225260E88001B0229 /* Info.plist */,
 				DA55B60825260E88001B0229 /* SampleIntentConfigurationExtension.entitlements */,
+				DAC586E0252713AC003599DB /* Localizable.strings */,
 			);
 			path = SampleIntentConfiguration;
 			sourceTree = "<group>";
@@ -370,6 +377,7 @@
 				DA55B63A25261840001B0229 /* Assets.xcassets */,
 				DA55B63C25261840001B0229 /* Info.plist */,
 				DA55B64025261840001B0229 /* SampleStaticConfigurationExtension.entitlements */,
+				DAC587002527166C003599DB /* Localizable.strings */,
 			);
 			path = SampleStaticConfiguration;
 			sourceTree = "<group>";
@@ -550,6 +558,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA55B60125260E88001B0229 /* Assets.xcassets in Resources */,
+				DAC586DE252713AC003599DB /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -558,6 +567,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA55B63B25261840001B0229 /* Assets.xcassets in Resources */,
+				DAC586FE2527166C003599DB /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -676,6 +686,24 @@
 				DAC586D12526F9F2003599DB /* es */,
 			);
 			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		DAC586E0252713AC003599DB /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DAC586DF252713AC003599DB /* en */,
+				DAC586E6252713B0003599DB /* es */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		DAC587002527166C003599DB /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DAC586FF2527166C003599DB /* en */,
+				DAC5870625271671003599DB /* es */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

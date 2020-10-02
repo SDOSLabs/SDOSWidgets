@@ -57,8 +57,8 @@ struct SampleIntentConfiguration: Widget {
         IntentConfiguration(kind: kind, intent: ConfigurationIntent.self, provider: Provider()) { entry in
             SampleIntentConfigurationEntryView(entry: entry)
         }
-        .configurationDisplayName("My Widget")
-        .description("This is an example widget.")
+        .configurationDisplayName(NSLocalizedString("Configurable SDOSWidget", comment: ""))
+        .description(NSLocalizedString("This is an example SDOSWidget.", comment: ""))
     }
 }
 

@@ -1,0 +1,9 @@
+/* 
+  Localizable.strings
+  Emoji Rangers
+
+  Created by Juan Miguel Fernández Lerena on 02/10/2020.
+  Copyright © 2020 Apple. All rights reserved.
+*/
+"Configurable SDOSWidget"="SDOSWidget Configurable";
+"This is an example SDOSWidget."="Este es un ejemplo de SDOSWidget.";
