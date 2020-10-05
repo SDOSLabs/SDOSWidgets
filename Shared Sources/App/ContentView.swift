@@ -34,7 +34,7 @@ struct ContentView: View {
                     print("Last character selection: \(character)")
                 }
             }
-            .navigationBarTitle("Your Characters")
+            .navigationBarTitle(NSLocalizedString("Your Characters", comment: ""))
             .onOpenURL(perform: { (url) in
                 self.pandaActive = url == CharacterDetail.panda.url
                 self.spoutyActive = url == CharacterDetail.spouty.url

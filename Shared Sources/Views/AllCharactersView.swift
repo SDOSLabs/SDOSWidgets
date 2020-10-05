@@ -25,7 +25,7 @@ struct AllCharactersView: View {
                             Text(character.name)
                                 .font(.headline)
                                 .foregroundColor(.white)
-                            Text("Level \(character.level)")
+                            Text(NSLocalizedString("Level", comment: "") + " \(character.level)")
                                 .foregroundColor(.white)
                             HealthLevelShape(level: character.healthLevel)
                                 .frame(height: 10)

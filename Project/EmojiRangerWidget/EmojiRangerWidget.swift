@@ -104,8 +104,8 @@ struct EmojiRangerWidget: Widget {
         IntentConfiguration(kind: kind, intent: DynamicCharacterSelectionIntent.self, provider: Provider()) { entry in
             EmojiRangerWidgetEntryView(entry: entry)
         }
-        .configurationDisplayName("Ranger Detail")
-        .description("See your favorite ranger.")
+        .configurationDisplayName(NSLocalizedString("Ranger Detail", comment: ""))
+        .description(NSLocalizedString("See your favorite ranger.", comment: ""))
         .supportedFamilies([.systemSmall, .systemMedium])
     }
 }

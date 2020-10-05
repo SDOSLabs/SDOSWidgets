@@ -66,8 +66,8 @@ struct LeaderboardWidget: Widget {
         StaticConfiguration(kind: kind, provider: LeaderboardProvider()) { entry in
             LeaderboardWidgetEntryView(entry: entry)
         }
-        .configurationDisplayName("Ranger Leaderboard")
-        .description("See all the rangers.")
+        .configurationDisplayName(NSLocalizedString("Ranger Leaderboard", comment: ""))
+        .description(NSLocalizedString("See all the rangers.", comment: ""))
         .supportedFamilies([.systemLarge])
     }
 }

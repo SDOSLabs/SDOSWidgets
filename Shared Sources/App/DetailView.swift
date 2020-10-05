@@ -20,12 +20,7 @@ struct DetailView: View {
                         .background(
                             RoundedRectangle(cornerRadius: 20, style: .continuous)
                                 .fill(Color.gameBackground))
-                    Text("""
-                        Once the timer ends \(character.name) will be back to
-                        full health and the next wave of enemies will attack.
-                        Place the Game Status Widget on your Home screen to
-                        be prepared.
-                        """)
+                    Text(NSLocalizedString("Once the timer ends", comment: "") + " " + (character.name) + " " + NSLocalizedString("will be back to\nfull health.\nPlace the Game Status Widget on your Home screen to\nbe prepared.", comment: ""))
                         .font(.callout)
                         .padding()
                         .multilineTextAlignment(.leading)
@@ -35,7 +30,8 @@ struct DetailView: View {
                 }
 
                 VStack(alignment: .leading, spacing: 16) {
-                    Text("About \(character.name)")
+                    Text(NSLocalizedString(
+                            "About", comment: "") + " " + (character.name))
                         .font(.title)
                     Text("\(character.bio)")
                         .font(.title2)

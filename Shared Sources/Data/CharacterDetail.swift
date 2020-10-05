@@ -22,37 +22,37 @@ struct CharacterDetail: Hashable, Codable, Identifiable {
     }
 
     static let panda = CharacterDetail(
-                name: "Power Panda",
+                name: NSLocalizedString("Power Panda", comment: ""),
                 avatar: "🐼",
                 healthLevel: 0.14,
-                heroType: "Forest Dweller",
+                heroType: NSLocalizedString("Forest Dweller", comment: ""),
                 healthRecoveryRatePerHour: 0.25,
                 url: URL(string: "game:///panda")!,
                 level: 3,
                 exp: 600,
-                bio: "Power panda loves eating bamboo shoots and leaves.")
+                bio: NSLocalizedString("Power panda loves eating bamboo shoots and leaves.", comment: ""))
     
     static let egghead = CharacterDetail(
-                name: "Egghead",
+                name: NSLocalizedString("Egghead", comment: ""),
                 avatar: "🦄",
                 healthLevel: 0.67,
-                heroType: "Free Ranger",
+                heroType: NSLocalizedString("Free Ranger", comment: ""),
                 healthRecoveryRatePerHour: 0.22,
                 url: URL(string: "game:///egghead")!,
                 level: 5,
                 exp: 1000,
-                bio: "Egghead comes from the magical land of Eggopolis and flies through the air with their magnificent mane billowing.")
+                bio: NSLocalizedString("Egghead comes from the magical land of Eggopolis and flies through the air with their magnificent mane billowing.", comment: ""))
 
     static let spouty = CharacterDetail(
-                name: "Spouty",
+                name: NSLocalizedString("Spouty", comment: ""),
                 avatar: "🐳",
                 healthLevel: 0.83,
-                heroType: "Deep Sea Goer",
+                heroType: NSLocalizedString("Deep Sea Goer", comment: ""),
                 healthRecoveryRatePerHour: 0.29,
                 url: URL(string: "game:///spouty")!,
                 level: 50,
                 exp: 20_000,
-                bio: "Spouty rises from the depths to bring joy and laugther to everyone. They are best friends with Octo.")
+                bio: NSLocalizedString("Spouty rises from the depths to bring joy and laugther to everyone. They are best friends with Octo.", comment: ""))
 
     static let availableCharacters = [panda, egghead, spouty]
 
@@ -152,43 +152,43 @@ let fauxResponse =
 
 extension CharacterDetail {
     static let spook = CharacterDetail(
-                name: "Mr Spook",
+                name: NSLocalizedString("Mr Spook", comment: ""),
                 avatar: "💀",
                 healthLevel: 0.14,
-                heroType: "Calcium Lover",
+                heroType: NSLocalizedString("Calcium Lover", comment: ""),
                 healthRecoveryRatePerHour: 0.25,
                 url: URL(string: "game:///spook")!,
                 level: 13,
                 exp: 2640,
-                bio: "Loves dancing, spooking, and playing their trumpet 🎺.")
+                bio: NSLocalizedString("Loves dancing, spooking, and playing their trumpet 🎺.", comment: ""))
 
     static let cake = CharacterDetail(
-                name: "Cake",
+                name: NSLocalizedString("Cake", comment: ""),
                 avatar: "🎂",
                 healthLevel: 0.67,
-                heroType: "Literally Cake",
+                heroType: NSLocalizedString("Literally Cake", comment: ""),
                 healthRecoveryRatePerHour: 0.22,
                 url: URL(string: "game:///cake")!,
                 level: 15,
                 exp: 3121,
                 bio: """
-        • 1 cake mix
-        • 2 butter
-        • 120 choc. chips
-        • 4 large eggs
-        • 1 cup semi-sweet chocolate chips
+        • \(NSLocalizedString("1 cake mix", comment: ""))
+        • \(NSLocalizedString("2 butter", comment: ""))
+        • \(NSLocalizedString("120 choc. chips", comment: ""))
+        • \(NSLocalizedString("4 large eggs", comment: ""))
+        • \(NSLocalizedString("1 cup semi-sweet chocolate chips", comment: ""))
         """)
 
     static let octo = CharacterDetail(
-                name: "Octo",
+                name: NSLocalizedString("Octo", comment: ""),
                 avatar: "🐙",
                 healthLevel: 0.83,
-                heroType: "Etyomology afficianado",
+                heroType: NSLocalizedString("Etyomology afficianado", comment: ""),
                 healthRecoveryRatePerHour: 0.29,
                 url: URL(string: "game:///octo")!,
                 level: 43,
                 exp: 86_463,
-                bio: "Can give 8 hugs simultaniously. They are best friends with Spouty.")
+                bio: NSLocalizedString("Can give 8 hugs simultaniously. They are best friends with Spouty.", comment: ""))
 
     static let remoteCharacters = [spook, cake, octo]
 }

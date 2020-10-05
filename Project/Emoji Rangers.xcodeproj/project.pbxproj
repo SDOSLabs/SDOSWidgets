@@ -46,6 +46,8 @@
 		57A01EA52488AE0B00D9E45F /* CharacterSelection.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 5733B361248884F60035C9B7 /* CharacterSelection.intentdefinition */; };
 		BE6A2CE1249988850022915C /* EmojiRangers.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6A2CDF249988850022915C /* EmojiRangers.swift */; };
 		BE6A2CE2249988850022915C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6A2CE0249988850022915C /* ContentView.swift */; };
+		DA22D353252AEA820001AA64 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA22D355252AEA820001AA64 /* Localizable.strings */; };
+		DA22D368252B0E150001AA64 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA22D36A252B0E150001AA64 /* Localizable.strings */; };
 		DA55B5FA25260E85001B0229 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5733B346248884DD0035C9B7 /* WidgetKit.framework */; platformFilter = ios; };
 		DA55B5FB25260E85001B0229 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5733B348248884DD0035C9B7 /* SwiftUI.framework */; };
 		DA55B5FE25260E85001B0229 /* SampleIntentConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA55B5FD25260E85001B0229 /* SampleIntentConfiguration.swift */; };
@@ -143,6 +145,10 @@
 		92D81A36B209034BE7D3F8CC /* LICENSE.txt */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
 		BE6A2CDF249988850022915C /* EmojiRangers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmojiRangers.swift; sourceTree = "<group>"; };
 		BE6A2CE0249988850022915C /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		DA22D354252AEA820001AA64 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		DA22D35B252AEA860001AA64 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
+		DA22D369252B0E150001AA64 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		DA22D370252B0E1B0001AA64 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
 		DA3F67D02525B15A00197D2F /* CHANGELOG.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = CHANGELOG.md; path = ../CHANGELOG.md; sourceTree = "<group>"; };
 		DA3F67D12525B15A00197D2F /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		DA55B5F925260E85001B0229 /* SampleIntentConfigurationExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SampleIntentConfigurationExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -292,6 +298,7 @@
 				5733B3372488842E0035C9B7 /* LaunchScreen.storyboard */,
 				5733B33A2488842E0035C9B7 /* Info.plist */,
 				DAC586D02526F9EE003599DB /* InfoPlist.strings */,
+				DA22D355252AEA820001AA64 /* Localizable.strings */,
 				1F38D2652489DD8D00C02D73 /* Game Status.entitlements */,
 				5733B3342488842E0035C9B7 /* Preview Content */,
 			);
@@ -324,6 +331,7 @@
 				43D3FDC9249170AC007E5782 /* LeaderboardWidget.swift */,
 				5733B362248884F70035C9B7 /* Assets.xcassets */,
 				5733B364248884F70035C9B7 /* Info.plist */,
+				DA22D36A252B0E150001AA64 /* Localizable.strings */,
 				1F38D26A2489DD9700C02D73 /* EmojiRangerWidgetExtension.entitlements */,
 			);
 			path = EmojiRangerWidget;
@@ -538,6 +546,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA22D353252AEA820001AA64 /* Localizable.strings in Resources */,
 				5733B3392488842E0035C9B7 /* LaunchScreen.storyboard in Resources */,
 				DAC586CE2526F9EE003599DB /* InfoPlist.strings in Resources */,
 				5733B3362488842E0035C9B7 /* Preview Assets.xcassets in Resources */,
@@ -550,6 +559,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5733B363248884F70035C9B7 /* Assets.xcassets in Resources */,
+				DA22D368252B0E150001AA64 /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -677,6 +687,24 @@
 				DAC586CD2526F9D5003599DB /* es */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		DA22D355252AEA820001AA64 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DA22D354252AEA820001AA64 /* en */,
+				DA22D35B252AEA860001AA64 /* es */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		DA22D36A252B0E150001AA64 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DA22D369252B0E150001AA64 /* en */,
+				DA22D370252B0E1B0001AA64 /* es */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 		DAC586D02526F9EE003599DB /* InfoPlist.strings */ = {

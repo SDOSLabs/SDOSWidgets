@@ -20,9 +20,9 @@ struct CharacterNameView: View {
                 .font(.title)
                 .fontWeight(.bold)
                 .minimumScaleFactor(0.25)
-            Text("Level \(character.level)")
+            Text(NSLocalizedString("Level", comment: "") + "                     \(character.level)")
                 .minimumScaleFactor(0.5)
-            Text("\(character.exp) XP")
+            Text("\(character.exp) " + NSLocalizedString("XP", comment: ""))
                 .minimumScaleFactor(0.5)
         }
     }

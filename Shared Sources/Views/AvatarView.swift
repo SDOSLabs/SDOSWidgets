@@ -36,10 +36,10 @@ struct AvatarView: View {
                     CharacterNameView(character)
                 }
                 VStack(alignment: .leading, spacing: 6) {
-                        Text("HP")
+                        Text(NSLocalizedString("HP", comment: ""))
                         HealthLevelShape(level: character.healthLevel)
                         .frame(height: 10)
-                    Text("Healing Time")
+                    Text(NSLocalizedString("Healing Time", comment: ""))
                     Text(character.fullHealthDate, style: .timer)
                         .font(.system(.title, design: .monospaced))
                 }
